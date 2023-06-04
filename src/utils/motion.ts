@@ -19,8 +19,8 @@ export const textVariant = (delay?: number) => {
 }
 
 export const fadeIn = (
-  direction: Direction,
-  type: unknown,
+  direction: Direction | '',
+  type: string,
   delay: number,
   duration: number
 ) => {
@@ -74,8 +74,8 @@ export const zoomIn = (delay: number, duration: number) => {
 }
 
 export const slideIn = (
-  direction: Direction,
-  type: unknown,
+  direction: Direction | '',
+  type: string,
   delay: number,
   duration: number
 ) => {
