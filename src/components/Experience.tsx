@@ -4,16 +4,20 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component'
 import { motion } from 'framer-motion'
-import { SectionWrapper } from '../hoc'
 
-// import 'react-vertical-timeline-component/style.min.css'
+import 'react-vertical-timeline-component/style.min.css'
 
 import { styles } from '../styles'
-// import { experiences } from '../constants'
-// import { SectionWrapper } from '../hoc'
+import { experiences } from '../constants'
+import { SectionWrapper } from '../hoc'
 import { textVariant } from '../utils/motion'
+import { ExperienceType } from '../Types/ExperienceType'
 
-const ExperienceCard = ({ experience }) => {
+interface ExperienceCardProps {
+  experience: ExperienceType
+}
+
+const ExperienceCard = ({ experience }: ExperienceCardProps) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
