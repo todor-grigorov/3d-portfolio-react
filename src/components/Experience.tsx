@@ -1,9 +1,10 @@
-// import React from 'react'
+import React from 'react'
 // import {
 //   VerticalTimeline,
 //   VerticalTimelineElement,
 // } from 'react-vertical-timeline-component'
 import { motion } from 'framer-motion'
+import { SectionWrapper } from '../hoc'
 
 // import 'react-vertical-timeline-component/style.min.css'
 
@@ -20,4 +21,7 @@ const Experience = () => {
   )
 }
 
-export default Experience
+export default SectionWrapper(
+  Experience,
+  'expericence'
+) as React.FunctionComponent
