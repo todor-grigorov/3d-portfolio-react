@@ -63,4 +63,4 @@ const About = () => {
   )
 }
 
-export default SectionWrapper(About, 'about') as typeof About
+export default SectionWrapper(About, 'about') as React.FunctionComponent
