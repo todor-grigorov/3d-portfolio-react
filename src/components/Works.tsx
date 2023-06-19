@@ -9,6 +9,15 @@ import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 import { Direction } from '../Types/Direction'
 
+interface IProjectCardProps {
+  index: number
+  name: string
+  description: string
+  tags: string[]
+  image: string
+  source_code_link: string
+}
+
 const ProjectCard = ({
   index,
   name,
@@ -16,7 +25,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
-}) => {
+}: IProjectCardProps) => {
   return (
     <motion.div
       variants={fadeIn(Direction.UP, 'spring', index * 0.5, 0.75)}
