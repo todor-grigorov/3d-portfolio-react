@@ -1,4 +1,5 @@
 import { ExperienceType } from '../Types/ExperienceType'
+import { Project, Tag } from '../Types/Project'
 import {
   mobile,
   backend,
@@ -197,7 +198,7 @@ const testimonials = [
   },
 ]
 
-const projects = [
+const projects: Project[] = [
   {
     name: 'Car Rent',
     description:
