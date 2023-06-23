@@ -20,8 +20,8 @@ const ProjectCard = ({ index, project }: IProjectCardProps) => {
   return (
     <motion.div variants={fadeIn(Direction.UP, 'spring', index * 0.5, 0.75)}>
       <Tilt
-        tiltMaxAngleX={45}
-        tiltMaxAngleY={45}
+        tiltMaxAngleX={20}
+        tiltMaxAngleY={35}
         scale={1}
         transitionSpeed={450}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
