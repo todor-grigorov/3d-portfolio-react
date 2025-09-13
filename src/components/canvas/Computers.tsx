@@ -15,12 +15,14 @@ const Computers = ({ isMobile }: IComputersProps) => {
       <hemisphereLight intensity={0.15} groundColor="black" />
       <pointLight intensity={1} />
       <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
+        position={[-10, 6, 10]}
+        angle={Math.PI / 3} // wide so it *hits* stuff
         penumbra={1}
-        intensity={1}
+        intensity={150} // crank it so it's obvious
+        distance={0} // 0 = no cutoff
+        decay={1} // safe default
         castShadow
-        shadow-mapSize={1024}
+        shadow-mapSize={2048}
       />
       <primitive
         object={computer.scene}
