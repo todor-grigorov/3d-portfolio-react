@@ -4,6 +4,7 @@ import { github } from '../assets'
 import { Direction } from '../Types/Direction'
 import { Project } from '../Types/Project'
 import { fadeIn } from '../utils/motion'
+import { JSX } from 'react'
 
 interface IProjectCardProps {
   index: number

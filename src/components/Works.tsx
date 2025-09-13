@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { JSX } from 'react'
 import { motion } from 'framer-motion'
 
 import { styles } from '../styles'
@@ -7,7 +7,7 @@ import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 import ProjectCard from './ProjectCard'
 
-const Works: React.FC = (): JSX.Element => {
+const Works = (): JSX.Element => {
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -17,7 +17,7 @@ const Works: React.FC = (): JSX.Element => {
 
       <div className="w-full flex">
         <motion.p
-          variants={fadeIn('', '', 0.1, 1)}
+          variants={fadeIn('', false, 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcases my skills and experience through
@@ -40,4 +40,4 @@ const Works: React.FC = (): JSX.Element => {
     </>
   )
 }
-export default SectionWrapper(Works, '')
+export default SectionWrapper(Works, '') as React.FunctionComponent

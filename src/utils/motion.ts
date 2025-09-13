@@ -1,3 +1,4 @@
+import { Variants } from 'framer-motion'
 import { Direction } from '../Types/Direction'
 
 export const textVariant = (delay?: number) => {
@@ -15,14 +16,14 @@ export const textVariant = (delay?: number) => {
         delay: delay,
       },
     },
-  }
+  } satisfies Variants
 }
 
 export const fadeIn = (
   direction: Direction | '',
-  type: string,
+  type: 'tween' | 'spring' | false,
   delay: number,
-  duration: number
+  duration: number,
 ) => {
   return {
     hidden: {
@@ -30,14 +31,14 @@ export const fadeIn = (
         direction === Direction.LEFT
           ? 100
           : direction === Direction.RIGHT
-          ? -100
-          : 0,
+            ? -100
+            : 0,
       y:
         direction === Direction.UP
           ? 100
           : direction === Direction.DOWN
-          ? -100
-          : 0,
+            ? -100
+            : 0,
       opacity: 0,
     },
     show: {
@@ -51,7 +52,7 @@ export const fadeIn = (
         ease: 'easeOut',
       },
     },
-  }
+  } satisfies Variants
 }
 
 export const zoomIn = (delay: number, duration: number) => {
@@ -77,7 +78,7 @@ export const slideIn = (
   direction: Direction | '',
   type: string,
   delay: number,
-  duration: number
+  duration: number,
 ) => {
   return {
     hidden: {
@@ -85,14 +86,14 @@ export const slideIn = (
         direction === Direction.LEFT
           ? '-100%'
           : direction === Direction.RIGHT
-          ? '100%'
-          : 0,
+            ? '100%'
+            : 0,
       y:
         direction === Direction.UP
           ? '100%'
           : direction === Direction.DOWN
-          ? '100%'
-          : 0,
+            ? '100%'
+            : 0,
     },
     show: {
       x: 0,
