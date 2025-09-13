@@ -21,11 +21,13 @@ const App = () => {
           <Hero />
         </div>
 
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <Feedbacks />
+        <div className="flex flex-col items-center">
+          <About />
+          <Experience />
+          <Tech />
+          <Works />
+          <Feedbacks />
+        </div>
 
         <div className="relative z-0">
           <Contact />

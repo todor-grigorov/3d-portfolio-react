@@ -1,4 +1,3 @@
-import React from 'react'
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -89,5 +88,5 @@ const Experience = () => {
 
 export default SectionWrapper(
   Experience,
-  'expericence'
+  'expericence',
 ) as React.FunctionComponent
