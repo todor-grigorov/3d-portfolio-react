@@ -5,7 +5,7 @@ import { styles } from '../styles'
 import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
-import ProjectCard from './ProjectCard'
+import ProjectCard from '../components/ProjectCard'
 
 const Works = (): JSX.Element => {
   return (
