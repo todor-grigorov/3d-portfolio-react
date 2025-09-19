@@ -42,6 +42,11 @@ export const navLinks = [
   },
 ]
 
+const overview = `I'm Full-Stack Engineer with frontend focus and 6+ years’ experience
+        delivering scalable, high-performance applications in React.js,
+        TypeScript, and .NET. Proven record building user-centric solutions in
+        data-heavy domains such as medical, GIS, IoT, and fintech.`
+
 const services = [
   {
     title: 'Web Developer',
@@ -264,4 +269,4 @@ const projects: Project[] = [
   },
 ]
 
-export { services, technologies, experiences, testimonials, projects }
+export { overview, services, technologies, experiences, testimonials, projects }
