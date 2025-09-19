@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import {
   Decal,
@@ -34,7 +34,7 @@ const Ball = ({ imgUrl }: BallProps) => {
           rotation={[2 * Math.PI, 0, 6.25]}
           scale={1}
           map={decal}
-          flatShading
+          // flatShading
         />
       </mesh>
     </Float>
